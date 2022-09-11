@@ -3,7 +3,29 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    { message: "Good luck with your project!" }.to_json
+    songs=Song.all 
+    songs.to_json
   end
 
+  get "/reggae" do 
+    songs=Song.all.genre_id=1
+    songs.to_json
+  end
+
+  post "/songs/" do 
+    songs=Song.create(
+      title: params[:title],
+      author: params[:author],
+      genre: params[:genre],
+      lyrics: params[:lyrics],
+      genre_id: params[:genre_id]
+    )
+    songs.to_json
+  end
+
+  delete "/songs/:id" do 
+    songs=Song.find(params[:id])
+    songs.destroy
+    songs.to_json
+  end
 end

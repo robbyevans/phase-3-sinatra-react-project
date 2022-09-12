@@ -16,7 +16,7 @@
 
 ### Screenshot
 
-<img src="./public/images/React App.png" width="900px" height="440px">
+<img src="./public/images/React App.png" >
 
 
 ## setup/installation

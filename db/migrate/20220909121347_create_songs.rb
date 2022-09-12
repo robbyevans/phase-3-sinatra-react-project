@@ -4,7 +4,7 @@ class CreateSongs < ActiveRecord::Migration[6.1]
       t.string :"title"
       t.string :"author"
       t.string :"lyrics"
-      t.string :"genre_id"
+      t.integer :"genre_id"
     end
   end
 end

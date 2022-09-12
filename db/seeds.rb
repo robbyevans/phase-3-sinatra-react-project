@@ -1,17 +1,17 @@
 puts "🌱 Seeding spices..."
 
 # Seed your database here
-Genre.create(name: "Reggae")
-Genre.create(name: "Hip-hop")
-Genre.create(name: "R&B")
-Genre.create(name: "Afro-beats")
+reggae=Genre.create(name: "Reggae")
+hiphop=Genre.create(name: "Hip-hop")
+r_b=Genre.create(name: "R&B")
+afro=Genre.create(name: "Afro-beats")
 
-Song.create(title: "Night nurse",author: "gregory isaac",genre_id: 1,lyrics:"Tell her try your best, just to make it quick
+night_nurse=Song.create(title: "Night nurse",author: "gregory isaac",genre_id: reggae.id,lyrics:"Tell her try your best, just to make it quick
 Woman tend to the sick
 'Cause there must be something she can do
 ")
 
-Song.create(title: "Boses_dont_speak",author:"migos",genre_id: 2,lyrics:"I'm in the coupe, fo' sho (skrr)
+migos=Song.create(title: "Boses_dont_speak",author:"migos",genre_id:hiphop.id,lyrics:"I'm in the coupe, fo' sho (skrr)
 Candy coat (candy)
 Maison Margiela my coat (Maison)
 I'm on froze (I'm on ice)
@@ -20,15 +20,18 @@ Anna Nicole (Anna Nicole)
 Everything glitter ain't gold (gold)
 ")
 
-Song.create(title: "Night nurse",author: "gregory isaac",genre_id: 3,lyrics:"Tell her try your best, just to make it quick
+gregory_isaac=Song.create(title: "Night nurse",author: "gregory isaac",genre_id:reggae.id,lyrics:"Tell her try your best, just to make it quick
 Woman tend to the sick
 'Cause there must be something she can do
 ")
 
-Song.create(title: "Nandy Ninogeshe",author: "Aai ni wewe ubavu wangu mwenyewe
+ninigeshe=Song.create(title: "Ninogeshe",author:"Nandy",lyrics:"Aai ni wewe ubavu wangu mwenyewe
 Ukifa nizikwe na wewe, nikifa uzikwe na mie
 Oh baby wee
-")
+Ninogeshe, ninogeshee baby
+Baby ninogeshe
+Ninogeshe, ninogeshee baby
+Baby ninogeshe",genre_id:afro.id)
 
 
 

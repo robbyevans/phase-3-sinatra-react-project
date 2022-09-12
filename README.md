@@ -1,17 +1,27 @@
 # Lyrical web application 1.0
 
+live link: https://lyrical-react-web-app.herokuapp.com/
+
 ## Author
 
 - Evans Rutto
 
 ## Description
 
-- Lyrical is a simple web application that allows you to create and post lyrics of your favourite songs,author,genre and artist on the DOM  while updating the same on your database concurrently.
+- Lyrical is a simple web application that allows you to create and post or delete lyrics of your favourite songs,author,genre and artist on the DOM  while updating the same on your database concurrently.
+- This project consist of two repositories,the React front end that handles DOM manipulation and the Ruby back end that is responsible for server and Database initialization and manipulation to perform all the CRUD operations.
+
+    1.React front-end that can be found at:https://github.com/robbyevans/phase-3-project-react-front-end
+
+    2.Ruby back-end that can be found at:https://github.com/robbyevans/phase-3-sinatra-react-project
+
 - Lyrical is built solely on React JS,HTML,CSS and Ruby
 
 - This is built by single contributor by the name Evans Rutto.
 
-- live link can be found at
+- live link can be found at https://lyrical-react-web-app.herokuapp.com/
+
+
   
 
 ### Screenshot
@@ -40,7 +50,8 @@
 
 This will install the necessary dependancies,perform migration and load the local server respectively.
 
- local server will run from port http://localhost:9292/.
+- However this repository is hosted inheroku and the live link is: https://lyrical-react-web-app.herokuapp.com/
+
 
 
 

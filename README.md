@@ -36,7 +36,7 @@ live link: https://lyrical-react-web-app.herokuapp.com/
 1.clone the following repos into your pc.
 - Back end ruby project
 
-`git clone https://github.com/robbyevans/phase-3-project-react-front-end.git`
+```git clone https://github.com/robbyevans/phase-3-project-react-front-end.git
 
 2.open the repository containing the files cloned in your code editor .
 
@@ -44,13 +44,13 @@ live link: https://lyrical-react-web-app.herokuapp.com/
 
       ```bundle install
 
-      ```bundle exec rake db:migrate
+      ```bundle exec rake db:migrate db:seed
 
       ```bundle exec rake server
 
 This will install the necessary dependancies,perform migration and load the local server respectively.
 
-- However this repository is hosted inheroku and the live link is: https://lyrical-react-web-app.herokuapp.com/
+- However this project is hosted inheroku and the live link is: https://lyrical-react-web-app.herokuapp.com/
 
 
 

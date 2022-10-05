@@ -1,4 +1,4 @@
-puts "🌱 Seeding spices..."
+puts "🌱 Seeding songs..."
 
 # Seed your database here
 reggae=Genre.create(name: "Reggae")

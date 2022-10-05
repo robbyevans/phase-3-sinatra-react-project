@@ -12,6 +12,21 @@ class ApplicationController < Sinatra::Base
     songs.to_json
   end
 
+  get "/hip-hop" do 
+    songs=Song.all.genre_id=2
+    songs.to_json
+  end
+
+  get "/r&b" do 
+    songs=Song.all.genre_id=3
+    songs.to_json
+  end
+
+  get "/afro" do 
+    songs=Song.all.genre_id=4
+    songs.to_json
+  end
+
   post "/songs/" do 
     songs=Song.create(
       title: params[:title],
